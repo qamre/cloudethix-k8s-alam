@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: master-nginx
+spec:
+  containers:
+    - name: master-nginx
+      image: qamre/cloudethix_master_nginx_qamre:3
+      ports:
+        - containerPort: 80
